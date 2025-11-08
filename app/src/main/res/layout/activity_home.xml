@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9C4"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    tools:context=".HomeActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐝 Welcome to Your Hive"
+            android:textColor="#F9A825"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFECB3"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:layout_marginBottom="8dp"
+                app:tint="#F9A825" />
+
+            <TextView
+                android:text="Syllabus"
+                android:textColor="#F57F17"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Pomodoro -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFE082"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:layout_marginBottom="8dp"
+                app:tint="#FB8C00" />
+
+            <TextView
+                android:text="Pomodoro"
+                android:textColor="#F57F17"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Notes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFECB3"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_marginBottom="8dp"
+                app:tint="#FBC02D" />
+
+            <TextView
+                android:text="Notes"
+                android:textColor="#F57F17"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Calendar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFF59D"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_menu_month"
+                android:layout_marginBottom="8dp"
+                app:tint="#F57F17" />
+
+            <TextView
+                android:text="Calendar"
+                android:textColor="#F57F17"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- To-Do -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFD54F"
+            android:elevation="4dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_menu_info_details"
+                android:layout_marginBottom="8dp"
+                app:tint="#FB8C00" />
+
+            <TextView
+                android:text="To-Do List"
+                android:textColor="#F57F17"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:text="Buzz your way to productivity 🐝"
+        android:textSize="14sp"
+        android:textColor="#9E9E9E"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

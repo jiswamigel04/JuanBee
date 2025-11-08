@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9C4"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header Bee Icon -->
+        <ImageView
+            android:src="@android:drawable/ic_menu_add"
+            android:contentDescription="Bee Icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="16dp"
+            app:tint="#FBC02D" />
+
+        <!-- Title -->
+        <TextView
+            android:text="Create Your Hive 🐝"
+            android:textColor="#F57F17"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:text="Let's start buzzing with knowledge!"
+            android:textColor="#616161"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Card-style input area -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFDE7">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:hint="Full Name"
+                android:padding="12dp"
+                android:inputType="textPersonName"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:hint="Email"
+                android:padding="12dp"
+                android:inputType="textEmailAddress"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="Password"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:hint="Confirm Password"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:background="@android:drawable/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signUpButton"
+            android:text="Join the Hive"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F9A825"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Go Back to Login -->
+        <TextView
+            android:id="@+id/backToLogin"
+            android:text="⬅️ Already a bee? Log In"
+            android:textSize="14sp"
+            android:textColor="#F57F17"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

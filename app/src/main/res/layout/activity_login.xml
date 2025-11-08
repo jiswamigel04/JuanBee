@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9C4"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".LoginActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:text="🐝 JUAN BEE"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#F9A825"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:text="Welcome back!"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:hint="Email"
+        android:textColorHint="#9E9E9E"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:hint="Password"
+        android:textColorHint="#9E9E9E"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPass"
+        android:text="Forgot password?"
+        android:textColor="#F9A825"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F9A825"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sign In Link -->
+    <TextView
+        android:id="@+id/signInLink"
+        android:text="Don’t have an account? Sign In"
+        android:textSize="14sp"
+        android:textColor="#F9A825"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
