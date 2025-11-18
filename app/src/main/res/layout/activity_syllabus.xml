@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7E6"
+    tools:context=".SyllabusActivity">
+
+    <!-- 🔙 Go Back -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Go Back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#F9B208"
+        android:textStyle="bold"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"
+        android:layout_margin="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Scrollable subjects -->
+    <ScrollView
+        android:id="@+id/scrollSyllabus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnBack"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleSyllabus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Syllabus"
+                android:textColor="#F9B208"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
