@@ -40,7 +40,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_edittext"
         android:gravity="center"
-        android:hint="Email"
+        android:hint="Username or Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:textColorHint="#9E9E9E" />

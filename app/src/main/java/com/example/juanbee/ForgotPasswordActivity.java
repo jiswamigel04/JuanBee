@@ -10,6 +10,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     EditText pinInput, newPassword, confirmNewPassword;
     Button saveButton;
+    TextView backToLogin2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,14 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         newPassword = findViewById(R.id.newPassword);
         confirmNewPassword = findViewById(R.id.confirmPassword);
         saveButton = findViewById(R.id.savePasswordButton);
+        backToLogin2 = findViewById(R.id.backToLogin2);
+
+        // Go back to login page
+        backToLogin2.setOnClickListener(v -> {
+            Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        });
 
         SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
         String savedPin = sharedPreferences.getString("pin", "");

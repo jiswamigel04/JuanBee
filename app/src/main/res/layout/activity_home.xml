@@ -69,6 +69,7 @@
 
         <!-- Pomodoro -->
         <LinearLayout
+            android:id="@+id/pomodoroCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -99,6 +100,7 @@
 
         <!-- Notes -->
         <LinearLayout
+            android:id="@+id/notesCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -129,6 +131,7 @@
 
         <!-- Calendar -->
         <LinearLayout
+            android:id="@+id/calendarCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -159,6 +162,7 @@
 
         <!-- To-Do -->
         <LinearLayout
+            android:id="@+id/todoCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"

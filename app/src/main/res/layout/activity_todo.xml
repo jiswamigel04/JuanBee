@@ -5,13 +5,16 @@
     android:background="#FFF9C4"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:id="@+id/todoCard">
+
 
     <!-- 🔙 Go Back -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <Button
             android:id="@+id/btnBack"
@@ -21,8 +24,6 @@
             android:textColor="#FFFFFF"
             android:backgroundTint="#F9B208"
             android:textStyle="bold"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="6dp"
             android:layout_marginBottom="16dp"/>
     </LinearLayout>
 

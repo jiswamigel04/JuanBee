@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7E6"
+    android:background="#FFF9C4"
     tools:context=".SyllabusActivity">
 
     <!-- 🔙 Go Back -->
@@ -31,8 +31,10 @@
 
         <LinearLayout
             android:id="@+id/layoutSubjects"
+            android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FFFF"
             android:orientation="vertical">
 
             <TextView
@@ -45,6 +47,466 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/textEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="1ST SEMESTER SUBJECTS"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#F9B208"
+                android:textSize="16sp" />  <!-- Removed typo and added closing tag -->
+
+
+            <TextView
+                android:id="@+id/Comp_Prog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="COMPUTER PROGRAMMING"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#E7B02C"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/Prelim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="PRELIMS - JAVA"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/strings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Strings"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/IfStatements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-If Statements"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/conditionalstatements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Conditional Statementts"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/MIDTERMPYTHON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="MIDTERM - PYTHON"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Syntax and Structure"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Variables and Data Types"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Operators"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ENDTERM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="ENDTERM - KOTLIN"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Algorithm"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Data Structures"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Eng_Math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="ADVANCED ALGEBRA"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#E7B02C"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/Prelim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="PRELIMS"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sYSTEM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-System of Linear Equations"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Inequalities"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Functions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Function"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Mt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="MIDTERM "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson177"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Polynomial and Rational Expressions"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesso4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Partial Fraction Decomposition"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Sequence and Series"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ENDTERM2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="ENDTERM"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Age Problem"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lesson51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Coin and Clock Problems"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Engmatth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="ENGINEERING MATHEMATICS"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#E7B02C"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/Prelim3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="PRELIMS"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-System of Linear Equations"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Circle"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Em3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Parabola"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="MIDTERM "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Hyperbola"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Ellipse"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Trigonometric Identities"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="ENDTERM"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Angles and DMS"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/em10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="-Right and Oblique Triangles"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

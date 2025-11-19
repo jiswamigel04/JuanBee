@@ -32,6 +32,18 @@
         <!-- Syllabus screen -->
         <activity android:name=".SyllabusActivity" />
 
+        <!-- Pomodoro screen -->
+        <activity android:name=".PomodoroActivity" />
+
+        <!-- Calendar screen -->
+        <activity android:name=".CalendarActivity" />
+
+        <!-- Notes screen -->
+        <activity android:name=".NotesActivity" />
+
+        <!-- To-Do screen -->
+        <activity android:name=".TodoActivity" />
+
     </application>
 
 </manifest>
